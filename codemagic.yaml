@@ -14,7 +14,7 @@ workflows:
       script:
        - name: Get Flutter packages
          script: |
-           flutter pub get
+           flutter packages pub get
        - name: Build APK with flutter
          script: |
            flutter build apk --debug
@@ -42,4 +42,5 @@ workflows:
      - build/**/outputs/**/*.aab
      - build/**/outputs/**/mapping.txt
      - flutter_drive.log
+
 
