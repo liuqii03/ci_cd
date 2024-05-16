@@ -11,7 +11,7 @@ workflows:
       cocoapods: default
       vars:
         FIREBASE_PROJECT: "flutter-cicd-e1c57"
-      script:
+    script:
        - name: Get Flutter packages
          script: |
            flutter packages pub get
@@ -42,5 +42,6 @@ workflows:
      - build/**/outputs/**/*.aab
      - build/**/outputs/**/mapping.txt
      - flutter_drive.log
+
 
 
